@@ -1,12 +1,5 @@
 	$ (document) .ready(function(){
-			$ ("button") .click(function(){
-				$(".first") .fadeIn('slow');
-
-
-			});
-			$ ("button.bt") .click(function(){
-				$(".first") .fadeOut('slow');
-					
-
-			});
+		$ ("p") .click(function(){
+			$ (this) .hide(2000);
+		});
 		});
