@@ -1,12 +1,18 @@
 $ (document) .ready(function(){
 
-	$ (".hide") .click(function(){
-
-		$ (".box") .hide(4000);
+	$ (':input') .mouseover(function(){
+		$ (':input') .val('Put your mouse back to hide it');
 	});
 
-	$ (".show") .click(function(){
-
-		$ (".box") .show(4000);
+	$ ('input') .mouseover(function(){
+		$('.box') .show(1000);
 	});
+
+	$ (':input') .mouseout(function(){
+		$ (':input') .val('Hover here to show');
+	});
+	$ ('input') .mouseout(function(){
+		$('.box') .hide(1000);
+	});
+
 });
